@@ -1,0 +1,188 @@
+.product-item{
+    position: relative;
+    background-color: #fff;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+
+    &:hover {
+        transform: translateY(-1.6px);
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid #ee4d2d;
+    }
+
+    .category{
+        position: absolute;
+        left: -5px;
+        top: 1.6rem;
+        background-color: var(--clr-orange);
+        color: var(--clr-white);
+        font-size: 12px;
+        text-transform: capitalize;
+        padding: 0.2rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 100%;
+            transform: translateY(-5px);
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid var(clr-orange);
+        }
+    }
+    
+    /* new */
+    .home-product-new {
+        min-height: 285px;
+        position: relative;
+        margin-top: 10px;
+        background-color: var(--white);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .home-product-new__img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    /*  */
+    /* img */
+    .home-product-item__img {
+        padding-top: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .home-product-item__name {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #333;
+        line-height: 1.8rem;
+        height: 3.6rem;
+        margin: 10px 10px 4px;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .home-product-item__price {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .home-product-item__price-old {
+        font-size: 1.2rem;
+        margin-left: 10px;
+        color: #666;
+        text-decoration: line-through;
+    }
+    .home-product-item__price-curent {
+        margin-left: 8px;
+        font-size: 1.3rem;
+        color: #EF5122;
+    }
+    /*  */
+    /* action */
+    .home-product-item__action {
+        margin: 8px 10px 0;
+        display: flex;
+    }
+    
+    
+    
+    .home-product-item__rating {
+        color: #d5d5d5;
+        font-size: 0.9rem;
+        margin-top: 2px;
+        margin-right: 5px;
+        /*  */
+        position: relative;
+        float: left;
+        margin-bottom: 3px;
+        display: block;
+        height: 11px;
+        line-height: 11px;
+    }
+    .card-jfy-rating-layer.top-layer {
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .card-jfy-rating-layer {
+        display: inline-block;
+    }
+    .home-product-item__rating--gold {
+        color: #FFCE3E;
+    }
+    .home-product-item__rating-separate {
+        padding: 2px 0;
+        border-left: 1px solid #dbdbdb;
+    
+    }
+    .home-product-item__action-sold {
+        color: #EE4D2D;
+        color: #595959;
+        margin-left: 5px;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    /*  */
+    /* origin */
+    .home-product-item__origin {
+        padding: 8px 10px 8px;
+        display: flex;
+        justify-content: space-between;
+        color: #EE4D2D;
+    }
+    
+    .home-product-item__origin-title {
+        color: #595959;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    /*  */
+    /* sale */
+    .home-product-item__sale {
+        padding: 4px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 36px;
+        text-align: center;
+        background-color: rgba(255, 216, 64, 0.93);
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            margin: auto;
+            border-width: 0 20px 4px;
+            border-style: solid;
+            border-color: transparent rgba(255, 216, 64, 0.93) transparent rgba(255, 216, 64, 0.93);
+        }
+        .home-product-item__sale-percent {
+            color: #EE4D20;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.2rem;
+            position: relative;
+            display: block;
+        }
+        .home-product-item__sale-lable {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.2rem;
+            color: #999;
+            display: block;
+        }
+    }
+
+}

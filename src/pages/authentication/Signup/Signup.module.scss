@@ -1,0 +1,123 @@
+.wrapper {
+    width: 100%;
+}
+
+.Rlj6l5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.14);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.p7oxk2 {
+    overflow: hidden;
+    padding: 0 30px 30px;
+}
+.fEA_sn {
+    margin-bottom: 12px;
+}
+.PNGrtG {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, .26);
+    padding-right: 4px;
+    white-space: pre;
+}
+.hrNwO1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.U3bTnx {
+    color: #ee4d2d;
+    font-weight: 500;
+}
+
+
+.main {
+    width: 375px;
+    margin: auto;
+    padding: unset;
+}
+.content {
+    padding: unset;
+}
+.header{
+    font-size: 32px;
+    margin: 16px auto;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 600;
+    font-size: 12px;
+}
+.container-box {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, .14);
+    border-radius: 2px;
+    box-shadow: inset 0 2px 0 rgba(0,0,0,.02);
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+.input-text {
+
+    border-radius: 2px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    padding-inline-start: 12px;
+    line-height: 100%;
+    outline: none;
+    font-size: 13px;
+    height: 40px;
+    caret-color: rgb(254, 44, 85);
+    width: 100%;
+    padding-inline-end: unset;
+    padding-right: 16px;
+    
+}
+.input-text[type="password"]::-webkit-contacts-auto-fill-button,
+.input-text[type="password"]::-webkit-credentials-auto-fill-button,
+.input-text[type="password"]::-ms-reveal,
+.input-text[type="password"]::-ms-clear { 
+  display: none !important;
+}
+ 
+.input-text-error {
+    border: 1px solid rgb(255, 76, 58);
+    padding-inline-start: 12px;
+    color: rgb(255, 76, 58);
+}
+.password-icon {
+    line-height: 0;
+    margin-inline-start: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    //margin-bottom: -4px;
+}
+.input-none {
+    right: 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 44px;
+    padding-inline-end: 16px;
+}
+.container-forgot {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline-block;
+}
+.button {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+

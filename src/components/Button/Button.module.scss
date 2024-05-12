@@ -1,0 +1,102 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+
+    &.disabled {
+        // pointer-events: none;
+        // opacity: 0.5;
+        border: none;
+        color: rgba(22, 24, 35, 0.34);
+        background-color: rgba(22, 24, 35, 0.06);
+        pointer-events: none;
+    }
+}
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+.title {
+    font-size: 1rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+// button stype
+.rounded {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-color: rgba(22, 24, 35, 0.12);
+    border-radius: 999px;
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    &:hover {
+        border-color: var(--primary);
+        border-color: var(--primary);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+
+}
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+
+    &:hover {
+        border-color: currentColor;
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+.outlineApp {
+    color: rgba(22, 24, 35, .75);
+    border-color: rgba(22, 24, 35, .12);
+    background-color: rgba(255, 255, 255, 1);
+    &:hover {
+        border-color: rgba(22, 24, 35, .2);
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+.text {
+    font-weight: 400;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// button size
+.small {
+    padding: 6px 6px;
+}
+.large {
+    min-width: 140px;
+    padding: 14px 16px;
+}
+.big {
+    min-width: 120px;
+    min-height: 40px;
+    padding: 6px 8px;
+    width: 100%;
+}

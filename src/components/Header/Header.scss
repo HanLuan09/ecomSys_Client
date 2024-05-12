@@ -1,0 +1,25 @@
+.header{
+    background: rgb(249,78,48);
+    background: linear-gradient(180deg, rgba(249,78,48,1) 0%, rgba(255,100,51,1) 100%);
+
+    //
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    //
+
+    .header-cnt-top{
+        border-bottom: 1px solid lighten(#F94E30, 10%);
+    }
+
+    @media screen and (max-width: 992px){
+        .header-cnt-top{
+            flex-direction: column;
+            .header-cnt-top-l{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    
+}
